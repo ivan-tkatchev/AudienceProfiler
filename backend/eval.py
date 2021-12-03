@@ -36,6 +36,8 @@ def prepare_model():
 
 
 def prepare_data(data):
+    data = data.fillna(0)
+    data = data.replace('None', 0)
     data['interp_game'] = data['interp_game'].astype(str)
     data['interp_subgame'] = data['interp_subgame'].astype(str)
     data['city'] = data['interp_subgame'].astype(str)
