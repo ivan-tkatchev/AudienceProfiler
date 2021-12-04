@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import pickle
@@ -31,13 +32,12 @@ def get_train_x_y(cur_data, using_features):
 
 def prepare_model():
     from_file = CatBoostClassifier()
-    model = from_file.load_model("model.h5")
+    # model = from_file.load_model("model.h5")
+    model = from_file.load_model(os.path.join(os.getcwd(), "backend/model.h5"))
     return model
 
 
 def prepare_data(data):
-    data = data.fillna(0)
-    data = data.replace('None', 0)
     data['interp_game'] = data['interp_game'].astype(str)
     data['interp_subgame'] = data['interp_subgame'].astype(str)
     data['city'] = data['interp_subgame'].astype(str)
@@ -66,5 +66,11 @@ def predict(data):
     x_test, y_test = prepare_data(data)
     preds_proba = model.predict_proba(x_test)
     score = roc_auc_score(y_test, preds_proba,  multi_class='ovr', average=None)
-
     pass
+
+
+def predict_demo(data):
+    model = prepare_model()
+    x_test, y_test = prepare_data(data)
+    preds_proba = model.predict_proba(x_test)
+    return preds_proba
