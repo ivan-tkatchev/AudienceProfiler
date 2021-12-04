@@ -26,7 +26,7 @@ To run the demo, do:
 
 This will run the UI demo on your localhost. Also, see offline demo by link:
 
-*Place a link*
+https://drive.google.com/file/d/13dni5RPm3fncQY3tTxCXngQcWI_pNr1h/view?usp=sharing
 
 ## Predict:
 
