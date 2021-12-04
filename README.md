@@ -35,3 +35,13 @@ https://drive.google.com/file/d/1eD6yy2N-F-WHJdLl6BtYKVlMQ4KgDh0R/view
 ## Presentation
 
 https://docs.google.com/presentation/d/1NeIJK2v7TODTZFKOMOVWPSR3tfhjqd_uPGOCFcI2hdk/edit#slide=id.g1061306b806_1_0
+
+# Team
+
+
+   <li>Андрей Шилов data scientist https://t.me/a_team2</li>
+	<li>Евгений Бурашников data scientist https://t.me/eburashnikov</li>
+	<li>Анжела Бурова data scientist https://t.me/angelaburova</li>
+	<li>Анастасия Филатова data scientist https://t.me/anfltv</li>
+	<li>Даниил Коновалов data scientist https://t.me/dikonovalov</li>
+
