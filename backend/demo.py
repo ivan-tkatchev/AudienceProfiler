@@ -4,13 +4,12 @@ import pandas as pd
 import os
 import plotly.graph_objects as go
 from geopy.geocoders import Nominatim
-from backend.proccessing_bundle import processing_bundle
-from backend.processing_device import processing_device
-from backend.eval import predict_demo
+from proccessing_bundle import processing_bundle
+from processing_device import processing_device
+from eval import predict_demo
 
 FIRST_N_ROWS = 5
-PATH_OUTPUT = "C://Users/afilatova/Documents/git/Misc/dataAnalysis/"
-PATH_TO_ALL_TEST = ""
+PATH_OUTPUT = "./"
 NUM_SEGMENTS_IN_TASK = 5
 
 

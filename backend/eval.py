@@ -1,11 +1,8 @@
 import os
 import pandas as pd
 import numpy as np
-import pickle
-import random
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from catboost import CatBoostClassifier, Pool
+from catboost import CatBoostClassifier
 from sklearn.metrics import roc_auc_score
 
 

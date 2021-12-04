@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from proccessing_bundle import processing_bundle
 from processing_device import processing_device
 from eval import predict
