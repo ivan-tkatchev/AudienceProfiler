@@ -21,7 +21,7 @@ To run the demo, do:
     cd backend
     streamlit run demo.py
 
-See offline demo by link:
+This will run the UI demo on your localhost. Also, see offline demo by link:
 
 *Place a link*
 
