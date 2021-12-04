@@ -1,5 +1,5 @@
 # AudienceProfiler
-Analize the audience for targeted advertising system.
+Analize the audience for a targeted advertising system.
 
 
 # Technical problem statement
@@ -11,7 +11,7 @@ Accurate prediction of audience classes makes better targeting possible. Moreove
 # Setup
 To setup the dependencies, run 
 
-    python -m pip intall -r requirements.txt
+    python -m pip install -r requirements.txt
 
 python3.7+ is required.
 
