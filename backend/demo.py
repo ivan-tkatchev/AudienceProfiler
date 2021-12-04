@@ -181,7 +181,7 @@ def process_clusters(uploadedFile):
         # name='{0} - {1}'.format(lim[0], lim[1])))
 
         fig2.update_layout(
-            title_text='LALALA',
+            title_text='World map visualization',
             showlegend=True,
             geo=dict(
                 scope='world',

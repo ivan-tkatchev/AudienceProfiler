@@ -30,7 +30,7 @@ def get_train_x_y(cur_data, using_features):
 def prepare_model():
     from_file = CatBoostClassifier()
     # model = from_file.load_model("model.h5")
-    model = from_file.load_model(os.path.join(os.getcwd(), "backend/model.h5"))
+    model = from_file.load_model(os.path.join(os.getcwd(), "model.h5"))
     return model
 
 
