@@ -11,7 +11,7 @@ Accurate prediction of audience classes makes better targeting possible. Moreove
 # Setup
 To setup the dependencies, run 
 
-    bash setup.sh
+    python -m pip intall -r requirements.txt
 
 python3.7+ is required.
 
