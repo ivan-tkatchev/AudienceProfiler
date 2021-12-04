@@ -63,7 +63,7 @@ def predict(data):
     x_test, y_test = prepare_data(data)
     preds_proba = model.predict_proba(x_test)
     score = roc_auc_score(y_test, preds_proba,  multi_class='ovr', average=None)
-    pass
+    return preds_proba, score
 
 
 def predict_demo(data):
