@@ -1,5 +1,5 @@
 # AudienceProfiler
-Analize the audience for targeted advertising system.
+Analize the audience for a targeted advertising system.
 
 
 # Technical problem statement
@@ -8,10 +8,13 @@ Given a dataset of device and event info, collected by an advertising system, pr
 
 Accurate prediction of audience classes makes better targeting possible. Moreover, clustering the data may be an instrument to deduce more classes for targeting, which improves the advertising system.
 
+# Code structure
+
+The *backend* folder is for demo, please see the description below. Rest of the code is for research purposes. 
 # Setup
 To setup the dependencies, run 
 
-    python -m pip intall -r requirements.txt
+    python -m pip install -r requirements.txt
 
 python3.7+ is required.
 
@@ -21,7 +24,7 @@ To run the demo, do:
     cd backend
     streamlit run demo.py
 
-See offline demo by link:
+This will run the UI demo on your localhost. Also, see offline demo by link:
 
 *Place a link*
 
