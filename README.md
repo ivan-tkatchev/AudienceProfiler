@@ -8,6 +8,9 @@ Given a dataset of device and event info, collected by an advertising system, pr
 
 Accurate prediction of audience classes makes better targeting possible. Moreover, clustering the data may be an instrument to deduce more classes for targeting, which improves the advertising system.
 
+# Code structure
+
+The *backend* folder is for demo, please see the description below. Rest of the code is for research purposes. 
 # Setup
 To setup the dependencies, run 
 
