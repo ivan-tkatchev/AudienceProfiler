@@ -4,9 +4,9 @@ import pandas as pd
 import os
 import plotly.graph_objects as go
 from geopy.geocoders import Nominatim
-from backend.proccessing_bundle import processing_bundle
-from backend.processing_device import processing_device
-from backend.eval import predict_demo
+from proccessing_bundle import processing_bundle
+from processing_device import processing_device
+from eval import predict_demo
 
 FIRST_N_ROWS = 10
 PATH_OUTPUT = "./"
