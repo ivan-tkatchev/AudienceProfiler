@@ -4,12 +4,13 @@ import pandas as pd
 import os
 import plotly.graph_objects as go
 from geopy.geocoders import Nominatim
-from proccessing_bundle import processing_bundle
-from processing_device import processing_device
-from eval import predict_demo
+from backend.proccessing_bundle import processing_bundle
+from backend.processing_device import processing_device
+from backend.eval import predict_demo
 
-FIRST_N_ROWS = 5
+FIRST_N_ROWS = 10
 PATH_OUTPUT = "./"
+PATH_TO_ALL_TEST = ""
 NUM_SEGMENTS_IN_TASK = 5
 
 
@@ -65,7 +66,7 @@ def predict_segments(input_data):
                                                     "2": "prob_seg1", "3": "prob_seg1",
                                                     "4": "prob_seg1"})
     preds_proba_df.insert(0, "user_data_row", np.arange(0, preds_proba_df.shape[0], 1))
-    st.write(preds_proba_df)
+    st.write(preds_proba_df.iloc[0:FIRST_N_ROWS, 1:])
     fout_path = os.path.join(PATH_OUTPUT, "res_segment_probs.csv")
     preds_proba_df.to_csv(fout_path)
     st.write(f"Predicted segment probability for user data were save to file {fout_path}")
@@ -181,7 +182,7 @@ def process_clusters(uploadedFile):
         # name='{0} - {1}'.format(lim[0], lim[1])))
 
         fig2.update_layout(
-            title_text='World map visualization',
+            title_text='Data Map',
             showlegend=True,
             geo=dict(
                 scope='world',
@@ -212,7 +213,7 @@ def run():
 
         process_user_coverage(is_uploaded_file, probs_segment)
 
-        process_clusters(is_uploaded_file)
+        #process_clusters(is_uploaded_file)
 
 
 if __name__ == '__main__':

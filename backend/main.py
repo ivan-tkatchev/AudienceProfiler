@@ -23,6 +23,10 @@ if __name__ == '__main__':
     # proccessing bundle's by Andrew
     data = processing_bundle(data)
     data = processing_device(data)
-    predict(data)
-    print(data.head())
+    print("PREPROCESSED DATA:\n", data.head())
+    preds_proba, score = predict(data)
+    print("PREDICT (probability):\n", preds_proba)
+    print("Score (ROC AUC):\n", score)
+    
+
 
